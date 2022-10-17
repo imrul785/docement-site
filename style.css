@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Here is main Container */
+.main-container {
+    display: flex;
+    justify-content: flex-end;
+}
+/* Here id side nav */
+
+.side-nav {
+    width: 20%;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #35B1E5;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.logo {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.logo-img {
+    width: 100%;
+}
+
+
+/* Here is nav menu */
+
+.nav-bar-element {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 41px;
+    /* overflow: scroll; */
+}
+.nav-bar-element li {
+    margin-top: 1px;
+    padding-left: 10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.active {
+    background-color: #fff !important;
+}
+.nav-bar-element li:hover{
+    background-color: #ffffff52;
+}
+
+.nav-bar-element li a {
+    color: #000;
+    text-decoration: none !important;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: flex;
+    width: 100%;
+}
+.nav-bar-element li.active a{
+    color: #35B1E5;
+}
+
+
+/* Here is main container inner */
+
+.contaner-main-inner{
+    width: 80%;
+    padding-left: 20px;
+    margin-top: 4%;
+}
+.container-section {
+    padding-top: 50px;
+    scroll-behavior: smooth;
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+.container-headding {
+    border-top: 1px solid #f7f5f5;
+    border-bottom: 1px solid #f7f5f5;
+}
+.container-headding-element {
+    font-size: 50px;
+    margin: 10px 0px;
+    color: #76caeda3;
+}
+.container-details {
+    margin-top: 5%;
+}
+.container-details-inner-list li {
+    font-size: 19px;
+}
+.container-details-element {
+    font-size: 16px;
+    color: #838080;
+}
+.container-example-img {
+    width: 100%;
+}
+
+.container-image-details{
+    margin: 25px 0;
+    font-size: 15px;
+    color: #838080;
+}
+
+
+@media only screen and (max-width:768px){
+    .side-nav{
+        display: none;
+    }
+    .contaner-main-inner {
+        width: 100%;
+        padding-left: 20px;
+        margin-top: 0;
+    }
+    .container-section {
+        margin: 0;
+        width: 100%;
+        padding-right: 20px;
+        height: auto;
+    }
+    .container-headding-element {
+        font-size: 30px;
+        margin: 10px 0px;
+        color: #76caeda3;
+    }
+    .container-details-element {
+        font-size: 15px;
+        color: #838080;
+        text-align: justify;
+    }
+}
